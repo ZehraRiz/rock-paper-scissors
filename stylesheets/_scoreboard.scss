@@ -1,0 +1,68 @@
+.scoreboard{
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px $header-outline solid;
+    border-radius: 10px;
+    padding: 10px 10px;
+    @include media-md{
+        margin: 50px auto;
+        width: 70%;
+        padding: 15px;
+    }
+    @include media-lg{
+        margin: 100px auto 50px auto;
+        width: 40%;
+        padding: 30px;
+    }
+
+    .logo{
+    img{
+        margin-left: 15px;
+        height: 50px;
+
+        @include media-md{
+            height: 80px;
+    }
+    @include media-lg{
+        height: 150px;
+}
+}
+    }
+
+    .score{
+        background: white;
+        padding: 8px 28px;
+        border-radius:  8px;
+
+        @include media-lg{
+            padding: 14px 80px;
+        }
+        &-heading{
+            color: $score-text;
+            display: block;
+            text-transform: uppercase;
+            font-weight: $font-weight-2;
+            font-size: 12px;
+            @include media-md{
+                font-size: 18px;
+            }
+            @include media-lg{
+                font-size: 30px;
+            }
+        }
+        &-value{
+            color: $dark-text;
+            font-weight:$font-weight-2;
+            font-size: 35px;
+            @include media-md{
+                font-size: 40px;}
+                @include media-lg{
+                    font-size: 80px;}
+        }
+
+    }
+}
+

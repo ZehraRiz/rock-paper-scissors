@@ -1,0 +1,84 @@
+.game_play{
+   position: relative;
+   height: 30vh;
+    width: 65vw;
+    display: inline-block; 
+
+    //when result is shown
+    
+
+  @include media-lg{
+            height: 40vh;
+            width: 40%;
+            width: 60%; //when result is shown
+        }
+
+    
+    .your_pick
+    {
+        position: absolute;
+        top: -50px;
+        left: -30px;
+        @include media-lg {
+        display: flex;
+        flex-direction: column-reverse;
+        } 
+    }
+
+    .house_pick{
+        position: absolute;
+        top: -50px;
+        right: -30px; 
+        .circle-dark{
+            opacity:0.25;
+            background-color: Black;
+        }
+
+        @include media-lg {
+            display: flex;
+            flex-direction: column-reverse;
+            } 
+
+        /* when not picked
+        .circle{
+            background: transparent;
+            .inner-circle{
+                background: $dark-text;
+            }
+        }
+        */
+    }
+    
+    span{
+        display: block;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        color: white;
+        @include media-md{
+            margin-top: 2rem;
+            font-size: 25px;
+        }
+        @include media-lg{
+            margin-bottom: 80px;
+            font-size: 35px;
+        }
+    }
+
+    .inner-circle{
+        @include media-lg{
+        width: 320px;
+        height: 320px;
+        border-radius: 160px;
+      }
+    }
+    .circle{
+        @include media-lg{
+        width: 400px;
+        height: 400px;
+        border-radius: 200px;
+        }
+        
+    }
+    
+}
+

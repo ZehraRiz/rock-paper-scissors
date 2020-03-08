@@ -1,0 +1,99 @@
+@import "config";
+@import "scoreboard";
+@import "initial-screen";
+@import "game-play";
+@import "footer";
+@import "result";
+@import "rules";
+@import "animations";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: $background-color;
+    font-family: $font-family;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    }
+    
+
+.inner-circle{
+    background: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-md{
+        width: 125px;
+        height: 125px;
+        border-radius: 62px;
+    }
+    @include media-lg{
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+    }
+}
+.circle{
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-paper{
+        background: $paper-gradient!important;
+    }
+    &-scissors{
+        background: $scissors-gradient!important;
+    }
+    &-rock{
+        background: $rock-gradient!important;
+    }
+
+    @include media-md{
+        width: 180px;
+        height: 180px;
+        border-radius: 90px;
+    }
+    @include media-lg{
+        width: 260px;
+        height: 260px;
+        border-radius: 130px;
+    }
+    
+}
+.game{
+    margin-top: 100px;
+    text-align: center;
+    margin-right: 20px;   
+    margin-left: 20px;
+    @include media-md{
+        margin-top: 150px;
+    }
+    
+   
+}
+.hide{
+       display: none;
+   }
+
+   .spinning-div{
+    animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out; 
+   }
+
+   .fadeIn-div{
+    animation-name: fadeIn;
+    animation-duration: 900ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out; 
+   }

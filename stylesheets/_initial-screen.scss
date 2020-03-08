@@ -1,0 +1,75 @@
+  .game_start{
+        position: relative;
+        height: 30vh;
+        width: 65vw;
+        display: inline-block; 
+        @include media-md{
+            height: 40vh;
+            width: 60vw;
+        }
+        @include media-lg{
+            height: 40vh;
+            width: 35%;
+        }
+
+        .triangle{
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            transform: translate(-50%, -50%);
+        }
+
+        .circle{
+            position: absolute;
+           
+            
+        }
+
+        .circle-paper{
+            top: -50px;
+            left: -30px; 
+            
+
+            @include media-lg{
+                top: -90px;
+                left: -40px;
+            }
+        }
+
+        .circle-scissors{
+            top: -50px;
+            right: -30px; 
+            background: $scissors-gradient;
+            @include media-lg{
+                top: -90px;
+                right: -40px;
+            }
+        }
+
+        .circle-rock{
+            bottom: -80px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: $rock-gradient;
+            @include media-lg{
+                bottom: -150px;
+            }
+        }
+        
+        
+}
+img{
+    height: 50px;
+    @include media-md{
+        height: 70px;
+    }
+    @include media-lg{
+        height: 100px;
+    }
+    
+}
