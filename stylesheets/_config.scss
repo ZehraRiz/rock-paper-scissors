@@ -22,7 +22,7 @@ $rock-gradient: linear-gradient(to right, hsl(349, 71%, 52%) , hsl(349, 70%, 56%
     
 }
 @mixin media-lg {
-    @media screen and (min-width: 1900px){
+    @media screen and (min-width: 1280px){
         @content; 
     }
     

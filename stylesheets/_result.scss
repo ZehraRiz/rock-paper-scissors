@@ -18,6 +18,9 @@
             @include media-md{
                 font-size: 80px;
             }
+            @include media-lg{
+                font-size: 60px;
+            }
             
         }
         button{
@@ -42,6 +45,11 @@
                 margin-top: 1.5rem;
                 padding: 20px 80px;
                 font-size: 25px;
+            }
+            @include media-lg{
+                margin-top: 1rem;
+                padding: 18px 60px;
+                font-size: 20px;
             }
             
         }

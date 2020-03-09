@@ -10,8 +10,8 @@
             width: 60vw;
         }
         @include media-lg{
-            height: 40vh;
-            width: 25vw;
+            height: 30vh;
+            width: 30vw;
         }
 
         .triangle{
@@ -71,7 +71,7 @@ img{
         height: 70px;
     }
     @include media-lg{
-        height: 100px;
+        height: 80px;
     }
     
 }
