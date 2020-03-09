@@ -16,7 +16,7 @@
             font-weight: 700;
             text-transform: uppercase;
             @include media-md{
-                font-size: 90px;
+                font-size: 80px;
             }
             
         }
@@ -40,8 +40,8 @@
 
             @include media-md{
                 margin-top: 1.5rem;
-                padding: 22px 90px;
-                font-size: 30px;
+                padding: 20px 80px;
+                font-size: 25px;
             }
             
         }

@@ -6,6 +6,7 @@
     margin-left: auto;
     margin-right: auto;
     z-index: -1;
+    text-align: center;
 
     button{
         background: transparent;
@@ -18,21 +19,29 @@
         border-radius: 10px;
         border-color: white ;
         border-width: 2px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
 
         @include media-md{
-            float: right;
-            margin-right: 40px;
-            margin-bottom: 40px;
-            padding: 20px 45px;
+            margin: 20px;
             font-size: 25px;
+        }
+        @include media-lg{
+            float: right;
+            margin: 40px;
+            font-size: 50px;
+            background: transparent;
+        padding: 18px 60px;
         }
     }
 
     .attribution{
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50% , -50%);
+        bottom: 5px;
+        @include media-lg{
+            position: absolute; 
+            left: 50%;
+            transform: translatex(-50%);
+            font-size: 20px;
+            }
+                
     }
 }

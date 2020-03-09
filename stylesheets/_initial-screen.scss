@@ -1,15 +1,17 @@
   .game_start{
         position: relative;
-        height: 30vh;
+        height: 25vh;
         width: 65vw;
         display: inline-block; 
+        margin-top: 10vh;
         @include media-md{
-            height: 40vh;
+            margin-top: 5vh;
+            height: 35vh;
             width: 60vw;
         }
         @include media-lg{
             height: 40vh;
-            width: 35%;
+            width: 25vw;
         }
 
         .triangle{

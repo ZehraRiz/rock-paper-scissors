@@ -13,9 +13,9 @@
         padding: 15px;
     }
     @include media-lg{
-        margin: 100px auto 50px auto;
+        margin: 80px auto 50px auto;
         width: 40%;
-        padding: 30px;
+        padding: 25px;
     }
 
     .logo{
@@ -27,7 +27,7 @@
             height: 80px;
     }
     @include media-lg{
-        height: 150px;
+        height: 140px;
 }
 }
     }
@@ -38,7 +38,7 @@
         border-radius:  8px;
 
         @include media-lg{
-            padding: 14px 80px;
+            padding: 14px 70px;
         }
         &-heading{
             color: $score-text;
@@ -50,7 +50,7 @@
                 font-size: 18px;
             }
             @include media-lg{
-                font-size: 30px;
+                font-size: 28px;
             }
         }
         &-value{
@@ -60,7 +60,7 @@
             @include media-md{
                 font-size: 40px;}
                 @include media-lg{
-                    font-size: 80px;}
+                    font-size: 70px;}
         }
 
     }

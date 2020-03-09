@@ -29,9 +29,9 @@
 
 @media screen and (min-width: 1900px) {
   .scoreboard {
-    margin: 100px auto 50px auto;
+    margin: 80px auto 50px auto;
     width: 40%;
-    padding: 30px;
+    padding: 25px;
   }
 }
 
@@ -48,7 +48,7 @@
 
 @media screen and (min-width: 1900px) {
   .scoreboard .logo img {
-    height: 150px;
+    height: 140px;
   }
 }
 
@@ -60,7 +60,7 @@
 
 @media screen and (min-width: 1900px) {
   .scoreboard .score {
-    padding: 14px 80px;
+    padding: 14px 70px;
   }
 }
 
@@ -80,7 +80,7 @@
 
 @media screen and (min-width: 1900px) {
   .scoreboard .score-heading {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
@@ -98,20 +98,22 @@
 
 @media screen and (min-width: 1900px) {
   .scoreboard .score-value {
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 
 .game_start {
   position: relative;
-  height: 30vh;
+  height: 25vh;
   width: 65vw;
   display: inline-block;
+  margin-top: 10vh;
 }
 
 @media screen and (min-width: 750px) {
   .game_start {
-    height: 40vh;
+    margin-top: 5vh;
+    height: 35vh;
     width: 60vw;
   }
 }
@@ -119,7 +121,7 @@
 @media screen and (min-width: 1900px) {
   .game_start {
     height: 40vh;
-    width: 35%;
+    width: 25vw;
   }
 }
 
@@ -306,6 +308,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   z-index: -1;
+  text-align: center;
 }
 
 .footer button {
@@ -319,25 +322,38 @@ img {
   border-radius: 10px;
   border-color: white;
   border-width: 2px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 750px) {
   .footer button {
-    float: right;
-    margin-right: 40px;
-    margin-bottom: 40px;
-    padding: 20px 45px;
+    margin: 20px;
     font-size: 25px;
   }
 }
 
+@media screen and (min-width: 1900px) {
+  .footer button {
+    float: right;
+    margin: 40px;
+    font-size: 50px;
+    background: transparent;
+    padding: 18px 60px;
+  }
+}
+
 .footer .attribution {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  bottom: 5px;
+}
+
+@media screen and (min-width: 1900px) {
+  .footer .attribution {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+            transform: translatex(-50%);
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 1900px) {
@@ -372,7 +388,7 @@ img {
 
 @media screen and (min-width: 750px) {
   #result .result h1 {
-    font-size: 90px;
+    font-size: 80px;
   }
 }
 
@@ -398,8 +414,8 @@ img {
 @media screen and (min-width: 750px) {
   #result .result button {
     margin-top: 1.5rem;
-    padding: 22px 90px;
-    font-size: 30px;
+    padding: 20px 80px;
+    font-size: 25px;
   }
 }
 

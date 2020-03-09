@@ -10,7 +10,7 @@ const result_ = document.querySelector('#result')
 const resultText_ = document.querySelector(".result-text")
 const resultButton_ = document.querySelector(".result-button")
 const score_ = document.querySelector(".score-value")
-const rulesButton_ = document.querySelector(".rules-button");
+const rulesButton_ = document.querySelector(".rules-button")
 const rulesPage_ = document.querySelector(".rules-page");
 
 
@@ -24,8 +24,8 @@ var mq = window.matchMedia( "(max-width: 750px)" )
 paperButton_.addEventListener("click", ()=>secondScreen("paper"));
 scissorsButton_.addEventListener("click",()=> secondScreen("scissors"));
 rockButton_.addEventListener("click",()=> secondScreen("rock"));
+rulesButton_.addEventListener("click", showRulesPage);
 resultButton_.addEventListener("click",()=> setTimeout(displayInitalScreen(), 1000)) 
-rulesButton_.addEventListener("click", ()=>{console.log("tf")})
 
 function displayInitalScreen() {
     turnStart_.classList.remove("hide");
@@ -123,7 +123,7 @@ function showResult(result){
 }, 1500)
 }
 
-function displayRulesPage(){
+function showRulesPage(){
     rulesPage_.classList.remove("hide")
 }
 
